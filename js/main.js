@@ -38,6 +38,7 @@ window.onload = function() {
     var dead = false;
     var text = 0;
     var instr = 0;
+    var instr2 = 0;
     var counter = 0;
     var explosion;
     var steps;
@@ -100,6 +101,7 @@ window.onload = function() {
         game.time.events.loop(Phaser.Timer.SECOND, updateCounter, this);
         text = game.add.text(30, 30, 'Time: 0', { font: "32px Arial", fill: "#ffffff", align: "left" });
         instr = game.add.text(550, 30, 'Avoid the kiwis!', { font: "32px Arial", fill: "#ffffff", align: "right" });
+        instr2 = game.add.text(30, 70, 'Arrow key controls\nLeft and right to move\nUp to jump\nDown to crouch\nHint: You can jump over the higher kiwis', { font: "16px Arial", fill: "#ffffff", align: "left" });
         
     }
     
