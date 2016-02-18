@@ -165,7 +165,7 @@ window.onload = function() {
     
     if (cursors.up.isDown && player.body.touching.down)
     {
-        player.body.velocity.y = -1000;
+        player.body.velocity.y = -1070;
         jump.play('', 0, 0.3);
     }
     
